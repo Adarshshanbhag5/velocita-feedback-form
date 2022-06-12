@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+input,
+textarea {
+  width: 100% !important;
+  border: 1px solid gray;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: border 0.3s ease;
+}
+
+input:hover,
+textarea:hover {
+  border-color: #000;
+}
+
+.btn {
+  padding: 0.8rem 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  background: #0e054d;
+  border-radius: 5px;
+  font-weight: 600;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input.valid__formfield {
+  border: 2px solid #36cc36;
+  outline: none;
+}
+
+input.invalid__formfield {
+  border: 2px solid orangered;
+  outline: none;
+}
+
+.validation__info {
+  color: orangered;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+input.invalid__formfield + .validation__info {
+  display: block;
+}

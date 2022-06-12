@@ -1,0 +1,48 @@
+.App {
+  background-color: #1a1a1a;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head {
+  color: aliceblue;
+  margin: 1rem;
+}
+
+.form__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.bg__img {
+  position: absolute;
+  top: 8%;
+  max-width: 800px;
+  width: 25%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  .bg__img {
+    width: 50%;
+    top: 8%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bg__img {
+    width: 90%;
+    top: 10%;
+  }
+}
